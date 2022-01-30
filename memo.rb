@@ -40,7 +40,6 @@ require "csv"
             memo_contents.delete_at(arrangement_type - 1)
             memo = CSV.open(memo_name + ".csv","w")
             memo.puts memo_contents
-            p memo
 
         elsif edit_type === "3"
             puts "操作を終了いたします"
