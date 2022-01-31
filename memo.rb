@@ -1,4 +1,5 @@
 require "csv"
+require "readline"
  
     puts "1(新規でメモを作成) 2(既存のメモ編集する)"
  
