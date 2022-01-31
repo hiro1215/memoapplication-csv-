@@ -1,5 +1,4 @@
 require "csv"
-require "readline"
  
     puts "1(新規でメモを作成) 2(既存のメモ編集する)"
  
@@ -12,7 +11,7 @@ require "readline"
         puts "拡張子を除いたファイル名を入力してください"
         memo_name = gets.chomp
         puts "メモしたい内容を記入してください\nCtrl + Dで終了してください"
-        memo_contents = readlines(chomp: true)
+        memo_contents = readlines
         memo = CSV.open(memo_name + ".csv","w")
         memo.puts memo_contents
         
